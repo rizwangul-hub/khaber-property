@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Brand color overrides */
+  --color-brand-green: #06341f;       /* Luxury Dark Green */
+  --color-brand-green-light: #0B5233; /* Slightly brighter Forest Green */
+  --color-brand-green-dark: #032114;  /* Deep dark placeholder */
+  --color-brand-gold: #dfb234;        /* Rich Gold */
+  --color-brand-gold-hover: #fcd34d;  /* Golden Amber */
+  --color-brand-gold-dark: #b89020;   /* Muted Ochre Gold */
+  
+  /* Font Family Definitions */
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-urdu: "Noto Nastaliq Urdu", serif;
+  
+  /* Box Shadow Updates */
+  --shadow-gold: 0 4px 20px 0 rgba(223, 178, 52, 0.15);
+  --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Custom UI glassmorphism utility classes */
+.glass-panel {
+  background: rgba(6, 52, 31, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(223, 178, 52, 0.15);
+}
+
+.glass-panel-light {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: rgba(6, 45, 27, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(223, 178, 52, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(223, 178, 52, 0.35);
+  box-shadow: 0 10px 25px -5px rgba(223, 178, 52, 0.15);
+}
+
+/* Custom golden gradient backgrounds */
+.gold-gradient {
+  background: linear-gradient(135deg, #fcd34d 0%, #dfb234 50%, #b89020 100%);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #fcd34d 0%, #dfb234 50%, #b89020 100%);
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+
+.green-gradient {
+  background: linear-gradient(180deg, #06341f 0%, #032114 100%);
+}
+
+/* Base resets & transitions */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+body {
+  background-color: #03140e;
+  color: #f1f5f9;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #03140e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0B5233;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #dfb234;
+}

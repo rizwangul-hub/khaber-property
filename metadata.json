@@ -1,0 +1,6 @@
+{
+  "name": "Khyber Property Dealer & Builders",
+  "description": "Premium real estate website for Khyber Property Dealer & Builders in Peshawar, Pakistan. Specialized consultancy for buying, selling, renting, construction, and investment advisory in residential and commercial properties.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
